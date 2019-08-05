@@ -11,8 +11,6 @@ services:
   web:
     depends_on:
       - db
-    image: vsplate/deb_apache2_php7_mysql5:latest
-    volumes:
-      - ./html/:/var/www/html/
+    image: vsplate/phpmyadmin-4.8.1-allowarbitraryserver
     ports:
       - "80:80"
